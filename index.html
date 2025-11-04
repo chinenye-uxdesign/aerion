@@ -4,71 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aerion</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="menu">
-        <div class="row r-1">
-          <div class="link"><a href="#">Overview</a></div>
-        </div>
-        <div class="row r-2">
-          <div class="link"><a href="#">Technology</a></div>
-        </div>
-        <div class="row r-3">
-          <div class="link"><a href="#">Interface</a></div>
-        </div>
-        <div class="row r-4">
-          <div class="link"><a href="#">Features</a></div>
-          <div class="link"><a href="#">Applications</a></div>
-        </div>
-        <div class="row r-5">
-          <div class="link"><a href="#">Results</a></div>
-          <div class="link"><a href="#">Inspirations</a></div>
-        </div>
-      </div>
-      
-
-      <div class="website-content">
-        <h1>my content begins here.</h1>
-      </div>
-
       <nav>
-        <div class="logo">Aerion</div>
-        <button class="toggle">Menu</button>
+        <div class="logo"><img src="assets/alogo.png" alt="" /></div>
+        <p class="menu-open">Menu</p>
       </nav>
+
+      <section class="hero">
+        <div class="header">
+          <h1>Break</h1>
+          <sup>&copy;</sup>
+        </div>
+      </section>
+
+      <div class="menu">
+        <div class="menu-nav"><p class="menu-close">Close</p></div>
+
+        <div class="menu-col menu-img">
+          <img id="img-1" src="assets/a2.png" alt="" />
+          <img id="img-2" src="assets/a2.png" alt="" />
+          <img id="img-3" src="assets/a2.png" alt="" />
+          <img id="img-4" src="assets/a2.png" alt="" />
+        </div>
+
+        <div class="menu-col menu-items">
+          <div class="menu-logo"><img src="assets/alogo.png" alt="" /></div>
+
+          <div class="menu-links">
+            <div class="menu-link">
+              <p><a href="#">About</a></p>
+            </div>
+            <div class="menu-link">
+              <p><a href="#">Story</a></p>
+            </div>
+            <div class="menu-link">
+              <p><a href="#">Projects</a></p>
+            </div>
+            <div class="menu-link">
+              <p><a href="#">Releases</a></p>
+            </div>
+          </div>
+
+          <div class="menu-footer">
+            <div class="menu-sub-col">
+              <div class="menu-sub-item"><p>Interface</p></div>
+              <div class="menu-sub-item"><p>Features</p></div>
+              <br />
+              <div class="menu-sub-item"><p>Application</p></div>
+              <div class="menu-sub-item"><p>Results</p></div>
+              <br />
+              <div class="menu-sub-item"><p>Contact Us</p></div>
+              <br />
+              <div class="menu-sub-item"><p>AERION Studio</p></div>
+              <div class="menu-sub-item"><p>Spacial Systems</p></div>
+              <div class="menu-sub-item"><p>108 Lightwell Avenue</p></div>
+              <div class="menu-sub-item"><p>London, United Kingdom</p></div>
+              <br />
+            </div>
+            <div class="menu-sub-col">
+              <div class="menu-sub-item"><p>Instagram</p></div>
+              <div class="menu-sub-item"><p>Youtube</p></div>
+              <br />
+              <div class="menu-sub-item"><p>LinkedIn</p></div>
+              <div class="menu-sub-item"><p>Pinterest</p></div>
+              <br />
+              <div class="menu-sub-item"><p>Email</p></div>
+              <br />
+              <div class="menu-sub-item"><p>AERION Research Hub</p></div>
+              <div class="menu-sub-item"><p>Environmental Design Division</p></div>
+              <div class="menu-sub-item"><p>14 Meridian Place</p></div>
+              <div class="menu-sub-item"><p>England, United Kingdom</p></div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          const toggleButton = document.querySelector('.toggle');
-          let isOpen = false;
-
-          const timeline = gsap.timeline({ paused: true });
-
-          timeline.to(".website-content", {
-              duration: 2,
-              ease: "power4.inOut",
-              clipPath: "polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)",
-              scale: 0.5
-          });
-
-          timeline.to(".row", {
-            duration: 3,
-              left: "0%",
-              ease: "power4.inOut",
-              stagger: 0.1
-          }, "-=2.5");
-
-          toggleButton.addEventListener('click', function() {
-              if (isOpen) {
-                  timeline.reverse();
-              } else {
-                  timeline.play();
-              }
-          isOpen = !isOpen;
-          });
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/tilt.js"></script>
   </body>
 </html>

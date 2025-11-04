@@ -1,0 +1,32 @@
+/* CSS HEX */
+--tabasco: #ab2615;
+--blumine: #1e5070;
+--indian-khaki: #c4a787;
+--oil: #261c16;
+--crail: #c5623e;
+--hemlock: #5e533d;
+--ochre: #cb7920;
+--espresso: #5c2418;
+--monza: #cf080d;
+
+/* SCSS HEX */
+$tabasco: #ab2615;
+$blumine: #1e5070;
+$indian-khaki: #c4a787;
+$oil: #261c16;
+$crail: #c5623e;
+$hemlock: #5e533d;
+$ochre: #cb7920;
+$espresso: #5c2418;
+$monza: #cf080d;
+
+/* SCSS RGB */
+$tabasco: rgba(171,38,21,1);
+$blumine: rgba(30,80,112,1);
+$indian-khaki: rgba(196,167,135,1);
+$oil: rgba(38,28,22,1);
+$crail: rgba(197,98,62,1);
+$hemlock: rgba(94,83,61,1);
+$ochre: rgba(203,121,32,1);
+$espresso: rgba(92,36,24,1);
+$monza: rgba(207,8,13,1);
