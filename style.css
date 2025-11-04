@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Work Sans";
-  background: #812200;
+  background: #1f2d1c;
 }
 
 img {
@@ -90,7 +90,7 @@ nav {
   padding: 1.5em;
   width: 100vw;
   height: 100vh;
-  background: #812200;
+  background: #1f2d1c;
   color: #fff;
   display: flex;
   gap: 1.5em;
