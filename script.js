@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   setCanvasSize();
 
-  const frameCount = 191;
+  const frameCount = 252;
   const currentFrame = (index) =>
-    `./assets/frames/frame_${(index + 1).toString().padStart(4, "0")}.jpg`;
+    `./assets/frames2/frame_${(index + 1).toString().padStart(4, "0")}.jpg`;
 
   let images = [];
   let videoFrames = { frame: 0 };
